@@ -1,0 +1,24 @@
+#include<stdio.h>
+void main()
+{
+   int a[20];
+   int i,n,num,flag=0;
+   printf("enter how many elements:");
+   scanf("%d",&n);
+   printf("enter number\n");
+   scanf("%d",&num);
+   i=num;
+   for(i=0;i<n;i++)
+   {
+   	flag=0;
+   	  scanf("\n%d",&a[i]);
+   	  if(a[i]==num)
+   	  {
+   	  	flag=1;
+      }
+   }
+    if(flag==0)
+      printf("UNIQUE");
+    else
+      printf("DUPLICATE");
+}
