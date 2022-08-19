@@ -1,0 +1,23 @@
+#include<stdio.h>
+void main()
+{
+   int a[20];
+   int  size;
+   int i,sum=0,f=1;
+   printf("enter how many elements:");
+   scanf("%d",&size);
+   for(i=0;i<size;i++)
+
+   	  scanf("\n%d",&a[i]);
+   	f=1;
+    while(a[i]>0)
+     {
+    	f=f*a[i];
+ 	    a[i]--;
+      } 
+	  sum=sum+f;
+    }
+    printf("\n factorial sum=%d",sum);
+ 
+}
+ 
